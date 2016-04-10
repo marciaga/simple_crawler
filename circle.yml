@@ -1,0 +1,10 @@
+machine:
+    node:
+        version: 4.2.3
+    services:
+        - docker
+
+dependencies:
+    override:
+        - docker info
+        - docker build -t marciaga/simple_crawler .
